@@ -1,0 +1,84 @@
+.latest-article {
+    background-color: white;
+    width: 100%;
+    padding: 5.5em 1.5em;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.0178em;
+    color: var(--dark-gray);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.article {
+    background-color: white;
+}
+
+.article-img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.article-content {
+    padding: 1.5625em 1.875em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5em;
+}
+
+.article-author {
+    font-size: 0.625rem;
+
+    line-height: 1.8em;
+    letter-spacing: -0.016em;
+    color: var(--gray);
+}
+
+.article-title {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25em;
+    letter-spacing: -0.0181em;
+    color: var(--dark-gray);
+}
+
+.article-content {
+    font-size: 0.8125rem;
+    line-height: 1.125em;
+    letter-spacing: -0.0125em;
+    color: var(--gray);
+}
+
+
+.articles-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Show one column on smaller screens */
+    gap: 1.5rem; /* Adjust the gap between articles */
+    justify-content: center;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .articles-container {
+        grid-template-columns: repeat(2, 1fr); /* Show two columns on screens wider than 768px */
+    }
+}
+
+/* Media query for even larger screens */
+@media (min-width: 1024px) {
+    .articles-container {
+        grid-template-columns: repeat(3, 1fr); /* Show three columns on screens wider than 1024px */
+    }
+}
+
+/* Media query for very large screens */
+@media (min-width: 1280px) {
+    .articles-container {
+        grid-template-columns: repeat(4, 1fr); /* Show four columns on screens wider than 1280px */
+    }
+}

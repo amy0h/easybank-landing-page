@@ -1,0 +1,36 @@
+.choose-easy-bank {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.section-title {
+    margin-bottom: 3.5em;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.0178em;
+    color: var(--black);
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.feature-title {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    letter-spacing: -0.018em;
+    color: var(--black);
+    margin: 1.5em 0 0.8em 0;
+}
